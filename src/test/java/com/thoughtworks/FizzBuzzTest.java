@@ -39,7 +39,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void input_three_and_five_multiple_should_return_FizzBuzz() {
+    public void input_three_and_five_multiple_and_contains_five_should_return_Buzz() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String result = fizzBuzz.say(15);
         Assert.assertThat(result, CoreMatchers.equalTo("Buzz"));
@@ -53,14 +53,14 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void input_seven_and_five_multiple_should_return_BuzzWhizz() {
+    public void input_seven_and_five_multiple_should_return_Whizz() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String result = fizzBuzz.say(70);
         Assert.assertThat(result, CoreMatchers.equalTo("Whizz"));
     }
 
     @Test
-    public void input_seven_and_five_and_three_multiple_should_return_FizzBuzzWhizz() {
+    public void input_seven_and_five_and_three_multiple_and_contains_five_should_return_BuzzWhizz() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String result = fizzBuzz.say(105);
         Assert.assertThat(result, CoreMatchers.equalTo("BuzzWhizz"));
